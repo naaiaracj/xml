@@ -1,0 +1,36 @@
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [15/03/2025]
+Ejercicio: [XML BÁSICO EJ1]
+-->
+<!-- Nodo raíz donde guardamos la información de todas las ciudades -->
+<ciudades>
+<!-- Utilizamos esta etiqueta simplemente para organizar la estructura -->    
+    <ciudad>
+        <nombre>
+        Nueva Delhi
+        </nombre>
+<!-- Ya que el nombre está relacionado con el pais y su continente se pone dentro de la ciudad -->
+        <pais continente="Ásia">
+        India
+        </pais>
+    </ciudad>
+    <ciudad>
+        <nombre>
+        Lisboa
+        </nombre>
+<!-- El enunciado nos indica que el continente forma parte de un atributo por ello lo declaramos dentro del país -->        
+        <pais continente="Europa">
+        Portugal
+        </pais>
+    </ciudad>
+    <ciudad>   
+        <nombre>
+        El Cairo
+        </nombre>
+        <pais continente="África">
+        Egipto
+        </pais>
+    </ciudad>
+</ciudades>
