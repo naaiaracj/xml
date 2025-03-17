@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Fecha de cambio: 17/03/2025 - Declarar UTF para poder leer el archivo
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [15/03/2025]
+Ejercicio: [XML BÁSICO EJ3]
+-->
+
+<!-- Nodo Raíz la lista de libros -->
+<ListaLibros>
+<!-- El enunciado nos pide que el título, autor y año de publicación sean un atributo de cada libro-->
+    <libro titulo="Donde no queden más estrellas que contar" autor="María Martínez" año_publicacion="2021"> </libro>
+    <libro titulo="Fuego. Ciudades de humo" autor="Joana Marcus" año_publicacion="2022"> </libro>
+    <libro titulo="Fabricante de lágrimas" autor="Erin Doom" año_publicacion="2023"> </libro>
+
+</ListaLibros>
