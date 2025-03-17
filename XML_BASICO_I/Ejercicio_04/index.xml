@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [17/03/2025]
+Ejercicio: [XML BÁSICO EJ1]
+-->
+
+<Empresa>
+    <Empleado>
+        <nombre> Ana </nombre>
+        <apellido> García </apellido>
+        <edad> 30 </edad>
+        <departamento> Ventas </departamento>
+        <cargo> Ejecutivo de ventas </cargo>
+    </Empleado>
+
+        <Empleado>
+        <nombre> Luis </nombre>
+        <apellido> Rodríguez </apellido>
+        <edad> 45 </edad>
+        <departamento> Finanzas </departamento>
+        <cargo> Analista financiero </cargo>
+    </Empleado>
+
+    <Empleado>
+        <nombre> María </nombre>
+        <apellido> López </apellido>
+        <edad> 28 </edad>
+        <departamento> Marketing </departamento>
+        <cargo> Especialista en redes sociales </cargo>
+    </Empleado>
+
+</Empresa>
