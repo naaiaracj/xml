@@ -1,9 +1,11 @@
-<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fecha de cambio: 17/03/2025 - Declarar UTF para poder leer el archivo
 Nombre: [Naiara Cuenca Juanas]
 Curso: [ASIR1]
 Fecha: [15/03/2025]
 Ejercicio: [XML BÁSICO EJ1]
 -->
+
 <!-- Nodo raíz donde guardamos la información de todas las ciudades -->
 <ciudades>
 <!-- Utilizamos esta etiqueta simplemente para organizar la estructura -->    

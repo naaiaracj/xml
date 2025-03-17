@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [17/03/2025]
+Ejercicio: [XML BÁSICO EJ2]
+-->
+
+
+<!-- Nodo raíz donde guardamos la información de todos los hechos históricos -->
+<HechosHistoricos>
+<!-- El enunciado nos pide que la descripción del proio hecho sea un atributo -->
+    <Hechos DescripcionHecho="IBM da a conocer el PC">
+        <fecha>
+            <dia>12<dia>
+            <mes>8</mes>
+            <año>1981</año>
+        </fecha>
+    </Hechos>
+    <Hechos DescripcionHecho="Se funda Google">
+            <fecha>
+            <dia>4<dia>
+            <mes>9</mes>
+            <año>1998</año>
+        </fecha>
+    </Hechos>
+    <Hechos DescripcionHecho="Se funda Facebook">
+        <fecha>
+            <dia>4<dia>
+            <mes>2</mes>
+            <año>2004</año>
+        </fecha>
+    </Hechos>
+</HechosHistoricos>
+
+
+
+
+
+
+
+
+
+
+</HechosHistoricos>
