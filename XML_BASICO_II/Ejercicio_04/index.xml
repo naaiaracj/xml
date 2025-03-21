@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [21/03/2025]
+Ejercicio: [XML BÁSICO II EJ4]
+-->
+
+<!-- El nodo raíz es DAW ya que tenemos que guardar información del curso DAW y de la asignatura, Lenguaje de Marcas
+     Ya que solo vamos a guardar información de los alumnos de una asignatura, he decidido utilizar atributos para guardar la información de la misma,
+     por ejemplo, sus horas semanales-->
+<DAW asignatura="Lenguaje de Marcas" horas_semanales="4" caracter="obligatorio" fecha_inicio="15/09/2023" fecha_fin="22/06/2024">
+    <matriculacion>
+<!-- Guardamos la información de cada alumno que se matricula, en la dirección utilizamos atributos para la calle, número, código postal...
+     y cuando no existe la información como en las faltas de asistencia utilizamos elementos vacíos-->
+        <alumno1>
+            <nombre_completo> Ana Fernández Gutiérrez </nombre_completo>
+            <dni> 51623487V </dni>
+            <telefono> 666544566 </telefono>
+            <email> anafernandez@gmail.com </email>
+            <direccion calle="Amatista" numero="14" cp="28905" ciudad="Getafe" provincia="Madrid"> </direccion>
+            <faltas_asistencia/>
+            <notas/>
+        </alumno1>
+
+        <alumno2>
+            <nombre_completo> Carlos Lópex Sánchez </nombre_completo>
+            <dni> 52369874B </dni>
+            <telefono> 666455477 </telefono>
+            <email> carloslopez@gmail.com </email>
+            <direccion calle="Ópalo" numero="15" cp="28905" ciudad="Getafe" provincia="Madrid"> </direccion>
+            <faltas_asistencia/>
+            <notas estado="apto">
+        </alumno2>
+
+    </matriculacion>
+</DAW>
