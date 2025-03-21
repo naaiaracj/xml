@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [21/03/2025]
+Ejercicio: [XML BÁSICO II EJ1]
+-->
+
+<!-- El nodo de raíz es un lista de marcadores-->
+<ListaMarcadores>
+
+<!-- Ya que no podemos utilizar atributos por el enunciado establecido
+     utilizamos etiquetas personalizadas para el  nombre, descripcion y enlace. -->
+<marcador1>
+    <nombre> W3Schools. </nombre>
+    <descripcion> Tutoriales de informática. </descripcion>
+    <enlace> https://www.w3schools.com/ </enlace>
+</marcador1>
+
+<marcador2>
+    <nombre> Wikipedia. </nombre>
+    <descripcion> La enciclopedia libre. </descripcion>
+    <enlace> http://www.wikipedia.org/ </enlace>
+</marcador2>
+
+<marcador3>
+    <nombre> W3C </nombre>
+    <descripcion> World Wide Web Consortium. </descripcion>
+    <enlace> http://www.w3.org/ </enlace>
+</marcador3>
+
+</ListaMarcadores>
