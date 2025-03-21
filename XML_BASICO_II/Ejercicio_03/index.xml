@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [21/03/2025]
+Ejercicio: [XML BÁSICO II EJ3]
+-->
+
+<!-- Como nodo raíz indicamos a sopacebolla ya que queremos guardar la información de una receta de sopa de cebolla.
+     Ya que la receta solo se aplica si van a comer 4 personas pues creamos el atributo numero_personas que tenga el valor 4 -->
+<sopacebolla numero_personas="4">
+    <ingredientes>
+<!-- La receta se separa en una primera parte, los ingredientes por lo que guardamos uno a uno los ingredientes -->
+        <ingrediente1> 1 kg de cebollas </ingrediente1>
+        <ingrediente2> 2 litros de caldo de carne </ingrediente2>
+        <ingrediente3> 100gr de mantequilla </ingrediente3>
+        <ingrediente4> 1 cucharada de harina </ingrediente4>
+        <ingrediente5> 100gr de queso emmental </ingrediente5>
+        <ingrediente6> Pan Tostado en rebanadas </ingrediente6>
+        <ingrediente7> Tomillo </ingrediente7>
+        <ingrediente8> 1 hoja de laurel </ingrediente8>
+        <ingrediente9> Pimienta </ingrediente9>
+    <ingredientes>
+    
+    <proceso>
+<!-- La segunda parte que es el proceso se guarda cada uno de los pasos que hay que seguir -->
+        <paso1> Pelar y partir las cebollas en rodajas finas. </paso1>
+        <paso2> Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén
+transparentes sin dorarse. </paso2>
+        <paso3> Añadir la harina sin dejar de remover </paso3>
+        <paso4> Ponerlo en una cazuela con el caldo, el tomillo y el laurel. </paso4>
+        <paso5> Dejar cocer a fuego lento durante unos 15 minutos. </paso5>
+        <paso6> Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno. </paso6>
+    </proceso>
+
+</sopacebolla>
