@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [21/03/2025]
+Ejercicio: [XML BÁSICO II EJ2]
+-->
+
+<!-- El nodo raíz determinamos a futbol ya que se pide guardar la información de dos equipos de fútbol -->
+<futbol>
+        <equipo1> 
+            <nombre> Atletico De Madrid</nombre>
+            <ciudad> Madrid </ciudad>
+<!-- Nos piden que no se debe indicar el nombre del entrenador por lo que utilizamos un elemento vacío -->
+            <entrenador/>
+<!-- Nos piden quela posición sea un atributo y que tengas los siguientes valores: defensa,portero,medio o delantero. Por ello lo
+establecemos en el elemento jugador -->
+            <jugador1 posicion="portero"> 
+                <nombre> Jan Oblak </nombre>
+                <nacionalidad> Esloveno </nacionalidad>
+            </jugador1>
+            <jugador2 posicion="delantero"> 
+                <nombre> Julian Álvarez </nombre>
+                <nacionalidad> Argentino </nacionalidad>
+            </jugador2>
+        </equipo1>
+
+        <equipo2> 
+            <nombre> CF Fuenlabrada </nombre>
+            <ciudad> Fuenlabrada </ciudad>
+            <entrenador/>
+            <jugador1 posicion="defensa"> 
+                <nombre> David Alba Fernández </nombre>
+                <nacionalidad> Español </nacionalidad>
+            </jugador1>
+            <jugador2 posicion="medio"> 
+                <nombre> Alex Galindo </nombre>
+                <nacionalidad> Español </nacionalidad>
+            </jugador2>
+        </equipo2>
+</futbol>
