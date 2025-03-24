@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [24/03/2025]
+Ejercicio: [XML BÁSICO ESPACIOS DE NOMBRE]
+-->
+
+<c1:catalogo xmlns:os="http://www.software.com/catalogo1"
+xmlns:office="http://www.sofware.com/catalogo2">
+<c1:catalogo>
+
+<os:SSOs>    
+    <os:Windows version="11">
+        <os:nombre> Windows </os:nombre>
+        <os:desarrollador> Microsoft </os:desarrollador>
+    </os:Ubuntu>
+    <os:Ubuntu version="24.10">
+        <os:nombre> Ubuntu </os:nombre>
+        <os:desarrollador> Canonical Ltd </os:desarrollador>
+    </os:Ubuntu>
+    <os:Ios version="18.3.2">
+        <os:nombre> IOS </os:nombre>
+        <os:desarrollador> Apple Inc </os:desarrollador>
+    </os:Ios>
+</os:SSOs>
+
+<office:SAOs>
+    <office:Word version="2021">
+        <os:nombre> Microsoft Word </os:nombre>
+        <os:desarrollador> Microsoft </os:desarrollador>
+    </office:Word>
+    <office:Outlook version="2024">
+        <os:nombre> Outlook </os:nombre>
+        <os:desarrollador> Microsoft </os:desarrollador>
+    </office:Outlook>
+    <office:PowerPoint version="2021">
+        <os:nombre> PowerPoint </os:nombre>
+        <os:desarrollador> Microsoft </os:desarrollador>
+    </office:PowerPoint>
+</office:SAOs>
+
+</c1:catalogo>
