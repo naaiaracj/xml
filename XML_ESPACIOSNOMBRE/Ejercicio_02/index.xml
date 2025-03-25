@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [25/03/2025]
+Ejercicio: [XML BÁSICO ESPACIOS DE NOMBRE EJ2]
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:bk="http://libros.org/book">
+  <head><title>Book Review</title></head>
+    <body>
+      <bk:bookreview>
+        <bk:title>Introducción a XML</bk:title>
+          <table>
+            <tr align="center">
+              <td>Author</td>
+              <td>Price</td>
+              <td>Pages</td>
+              <td>Date</td>
+            </tr>
+            <tr align="left">
+              <td><bk:author>Simon St. Laurent</bk:author></td>
+              <td><bk:price>31.98</bk:price></td>
+              <td><bk:pages>352</bk:pages></td>
+              <td><bk:date>1998/01</bk:date></td>
+            </tr>
+          </table>
+      </bk:bookreview>
+    </body>
+</html>
