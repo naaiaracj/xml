@@ -7,10 +7,12 @@ Fecha: [24/03/2025]
 Ejercicio: [XML BÁSICO ESPACIOS DE NOMBRE]
 -->
 
+<!-- El elemento raíz es el catálogo que lo definimos en el espacio de nombre c1, después creamos dos espacios de nombres para el software
+     de sistemas informáticos y otro para los software de aplicaciones de oficina  -->
 <c1:catalogo xmlns:os="http://www.software.com/catalogo1"
 xmlns:office="http://www.sofware.com/catalogo2">
 <c1:catalogo>
-
+<!-- Abrimos el espacio os para el primer tipo de software y definimos tres tipos de software -->
 <os:SSOs>    
     <os:Windows version="11">
         <os:nombre> Windows </os:nombre>
@@ -27,6 +29,7 @@ xmlns:office="http://www.sofware.com/catalogo2">
 </os:SSOs>
 
 <office:SAOs>
+<!-- Abrimos el espacio office para el segundo tipo de software y definimos tres tipos de software -->
     <office:Word version="2021">
         <os:nombre> Microsoft Word </os:nombre>
         <os:desarrollador> Microsoft </os:desarrollador>
