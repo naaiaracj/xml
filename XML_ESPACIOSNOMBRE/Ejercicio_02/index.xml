@@ -7,10 +7,13 @@ Fecha: [25/03/2025]
 Ejercicio: [XML BÁSICO ESPACIOS DE NOMBRE EJ2]
 -->
 
+
+<!-- Creamos dos espacios de nombre el primero será default para meter la información del formato -->
 <html xmlns="http://www.w3.org/1999/xhtml"
 xmlns:bk="http://libros.org/book">
   <head><title>Book Review</title></head>
     <body>
+<!-- Metemos dentro del espacio denombre dos ya que queremos guardar la información -->
       <bk:bookreview>
         <bk:title>Introducción a XML</bk:title>
           <table>
@@ -21,6 +24,7 @@ xmlns:bk="http://libros.org/book">
               <td>Date</td>
             </tr>
             <tr align="left">
+<!-- Aquí metemos en los hijos del elemento principal la informacion de cada libro -->
               <td><bk:author>Simon St. Laurent</bk:author></td>
               <td><bk:price>31.98</bk:price></td>
               <td><bk:pages>352</bk:pages></td>
