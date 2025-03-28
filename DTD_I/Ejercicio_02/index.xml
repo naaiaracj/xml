@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [28/03/2025]
+Ejercicio: [DTD1 EJ2]
+-->
+
+<!-- En el DTD interno declaramos como elemento-raiz liga porque debemos guardar la información de tres libros-->
+<!DOCTYPE liga [
+<!-- Ya que queremos guardar 3 jugadores y como mínimo uno pues utilizamos el signo + -->
+<!ELEMENT liga (jugador+)>
+<!-- En cada elemento marcamos que información guardamos: en los que tienen hijos van separados por comas y los que guardan caracteres se pone #PCDATA-->
+<!ELEMENT jugador (nombre, apellidos, equipo, edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT equipo (ciudad, presidente)>
+<!ELEMENT presidente (NombrePresidente, ApellidosPresidente)>
+]>
+
+<liga>
+<jugador>
+    <nombre> Raphinha </nombre>
+    <apellidos> Dias Belloli </apellidos>
+    <equipo>
+        <ciudad> Barcelona </ciudad>
+        <presidente> 
+            <NombrePresidente> Joan </NombrePresidente>
+            <ApellidosPresidente> Laporta </ApellidosPresidente>
+        </presidente>
+    </equipo>
+</jugador>
+<jugador>
+    <nombre> Nico </nombre>
+    <apellidos> Williams Arthuer </apellidos>
+    <equipo>
+        <ciudad> Bilbao </ciudad>
+        <presidente> 
+            <NombrePresidente> Jon </NombrePresidente>
+            <ApellidosPresidente> Uriarte Uranga </ApellidosPresidente>
+        </presidente>
+    </equipo>
+</jugador>
+<jugador>
+    <nombre> Jan </nombre>
+    <apellidos> Oblak </apellidos>
+    <equipo>
+        <ciudad> Madrid </ciudad>
+        <presidente> 
+            <NombrePresidente> Pablo </NombrePresidente>
+            <ApellidosPresidente> Simeone </ApellidosPresidente>
+        </presidente>
+    </equipo>
+</jugador>
+</liga>
