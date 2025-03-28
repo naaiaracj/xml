@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [28/03/2025]
+Ejercicio: [DTD1 EJ1]
+-->
+
+<!-- En el DTD interno declaramos como elemento-raiz biblioteca porque debemos guardar la información de tres libros-->
+<!DOCTYPE biblioteca [
+<!-- Ya que queremos guardar 3 libros y como mínimo uno pues utilizamos el signo + -->
+<!ELEMENT biblioteca (libro+)>
+<!-- En cada elemento marcamos que información guardamos: en los que tienen hijos van separados por comas y los que guardan caracteres se pone #PCDATA-->
+<!ELEMENT libro (titulo, editorial, autor, numero_paginas)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT autor (nombre, apellidos)>
+<!ELEMENT numero_paginas (#PCDATA)>
+]>
+<biblioteca>
+<libro>
+    <titulo> Donde no queden más estrellas que contar </titulo>
+    <editorial> Crossbooks  </editorial>
+    <autor>
+        <nombre> María </nombre>
+        <apellidos> Martínez </apellidos>
+    </autor>
+    <numero_paginas> 452 </numero_paginas>
+    </libro>
+<libro>
+    <titulo> Fuego. Ciudades de humo </titulo>
+    <editorial> CrossBooks </editorial>
+    <autor>
+        <nombre> Joana </nombre>
+        <apellidos> Marcus </apellidos>
+    </autor>
+    <numero_paginas> 496 </numero_paginas>
+    </libro>
+<libro>
+    <titulo> Fabricante de lágrimas</titulo>
+    <editorial> Montena </editorial>
+    <autor>
+        <nombre> Erin </nombre>
+        <apellidos> Doom </apellidos>
+    </autor>
+    <numero_paginas> 640 </numero_paginas>
+    </libro>
+</biblioteca>
