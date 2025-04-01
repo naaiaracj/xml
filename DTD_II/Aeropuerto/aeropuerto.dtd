@@ -1,0 +1,14 @@
+<!-- Declaramos elemento raíz aeropuerto y el elemento vuelo tendrá que aparecer mínimo 1 vuelo -->
+<!ELEMENT aeropuerto (nombre, vuelo+, fecha)>
+<!ELEMENT nombre (#PCDATA)>
+<!-- El elemento diario es opcional puede aparecer o no y es un elemento vacio por ello el EMPTY -->
+<!ELEMENT vuelo (diario?, origen, destino, hora_salida, hora_llegada)>
+    <!ATTLIST vuelo codigo ID #REQUIRED>
+<!-- El estado del vuelo tiene que ser obligatoriamente uno de los establecidos y el estado "E" es por defecto -->
+    <!ATTLIST vuelo estado (C | E | R ) "E">
+<!ELEMENT diario EMPTY>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+<!ELEMENT hora_salida (#PCDATA)>
+<!ELEMENT hora_llegada (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
