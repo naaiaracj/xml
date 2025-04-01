@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [01/04/2025]
+Ejercicio: [DTD2 EJFactura]
+-->
+
+<!-- En el DTD interno declaramos como elemento-raiz factura -->
+<!DOCTYPE factura [
+<!-- En la factura declaramos los tres elementos principales -->
+<!ELEMENT factura (datos-emisor, datos-cliente, detalle-factura)>
+<!-- Declaramos sus atributos que son de tipo CDATA y son obligatorios = #REQUIRED -->
+    <!ATTLIST factura numero CDATA #REQUIRED>
+    <!ATTLIST factura fecha CDATA #REQUIRED>
+<!ELEMENT datos-emisor (nombre, cif, telefono)>
+<!ELEMENT datos-cliente (nombre, cif, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!-- Declaramos que debe haber al menos 1 linea en el detalle factura pero pueden aparecer más -->
+<!ELEMENT detalle-factura (linea)+>
+    <!ATTLIST detalle-factura importe CDATA #REQUIRED>
+<!-- Como el elemento oferta es opcional utilizamos el caracter ? -->
+<!ELEMENT linea (descripcion, cantidad, pvp, oferta?)>
+    <!ATTLIST linea codigo-articulo ID #REQUIRED>
+<!-- En el atributo tipo de linea los hemos separado con barras verticales que obligaban que tengan un solo valor de los tres -->
+    <!ATTLIST linea tipo (Libro | DVD | Varios) #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+<!-- Ya que se le da la opción de ser un elemento opcional el elemento está vacío según el enunciado -->
+<!ELEMENT oferta EMPTY>
+]>
+
+<factura numero="1234567" fecha="01/04/2025">
+    <datos-emisor>
+        <nombre> Naiara </nombre>
+        <cif> 12345678H </cif>
+        <telefono> 987456123 </telefono>
+    </datos-emisor>
+    
+    <datos-cliente>
+        <nombre> Pedro </nombre>
+        <cif> 12345678F </cif>
+        <telefono> 987456321 </telefono>
+    </datos-cliente>
+
+    <detalle-factura importe ="120€">
+        <linea codigo-articulo="ABCD-123" tipo="Varios">
+            <descripcion> Varios libros y DVD de disney </descripcion>
+            <cantidad> 5 </cantidad>
+            <pvp> 50€ </pvp>
+        </linea>
+        <linea codigo-articulo="ABCD-124" tipo="DVD">
+            <descripcion> DVD peliculas 2000s </descripcion>
+            <cantidad> 10 </cantidad>
+            <pvp> 50€ </pvp>
+        </linea>
+        <linea codigo-articulo="ABCD-125" tipo="Libro">
+            <descripcion> Libro de Maria Benabel </descripcion>
+            <cantidad> 1 </cantidad>
+            <pvp> 20€ </pvp>
+            <oferta/>
+        </linea>
+    </detalle-factura>
+</factura>
