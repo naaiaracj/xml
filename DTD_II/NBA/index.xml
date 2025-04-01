@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [01/04/2025]
+Ejercicio: [DTD2 EJNBA]
+-->
+
+<!-- En el DTD interno declaramos como elemento-raiz EquiposNBA -->
+<!DOCTYPE EquiposNBA [
+<!-- Declaramos los que los elementos de EquiposNBA puedan ser de 1 a varios -->
+<!ELEMENT EquiposNBA (equipo, nombre)+>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT equipo (titulos, posicion, quinteto)>
+<!-- Los atributos de conferencia son obligatorios y sólo se puede poner uno -->
+    <!ATTLIST equipo conferencia (este | oeste) #REQUIRED>
+<!ELEMENT titulos (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT quinteto (#PCDATA)>
+]>
+
+<EquiposNBA>
+    <nombre> Lakers </nombre>
+    <equipo conferencia="oeste">
+        <titulos> Ganador de Copa America </titulos>
+        <posicion> 1 </posicion>
+        <quinteto> 5 </quinteto>
+    </equipo>
+
+    <nombre> Celtics </nombre>
+    <equipo conferencia="este">
+        <titulos> Ganador de Copa America </titulos>
+        <posicion> 2 </posicion>
+        <quinteto> 5 </quinteto>
+    </equipo>
+</EquiposNBA>
