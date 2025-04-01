@@ -1,3 +1,4 @@
+<!DOCTYPE aeropuerto [
 <!-- Declaramos elemento raíz aeropuerto y el elemento vuelo tendrá que aparecer mínimo 1 vuelo -->
 <!ELEMENT aeropuerto (nombre, vuelo+, fecha)>
 <!ELEMENT nombre (#PCDATA)>
@@ -12,3 +13,4 @@
 <!ELEMENT hora_salida (#PCDATA)>
 <!ELEMENT hora_llegada (#PCDATA)>
 <!ELEMENT fecha (#PCDATA)>
+]>

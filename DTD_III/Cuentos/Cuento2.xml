@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Se conecta el documento xml con el documento dtd-->
+<!DOCTYPE aeropuerto SYSTEM "Cuentos.dtd">
+
+<cuento cod="H45" titulo="Los tres cerditos" genero="infantil">
+    <personajes>
+        <personaje id="1" tipo=""> 
+            <nombre> Tres cerditos </nombre>
+            <genero> N </genero>
+            <imagen> </imagen>
+        </personaje>
+        <personaje id="2" tipo="antagonista"> 
+            <nombre>Lobo </nombre>
+            <genero> M </genero>
+        </personaje>
+    </personajes>
+    <trama> El lobo quiere comerse a los cerditos </trama>
+    <precio moneda=""> 15.49 </precio>
+</cuento>

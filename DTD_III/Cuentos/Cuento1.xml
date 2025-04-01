@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Se conecta el documento xml con el documento dtd-->
+<!DOCTYPE aeropuerto SYSTEM "Cuentos.dtd">
+
+<cuento cod="N12" titulo="Caperucita Roja" genero="infantil">
+    <personajes>
+        <personaje id="1" tipo=""> 
+            <nombre> Caperucita </nombre>
+            <genero> F </genero>
+            <descripcion_fisica> Niña con capa roja </descripcion_fisica>
+        </personaje>
+        <personaje id="2" tipo="antagonista"> 
+            <nombre>Lobo </nombre>
+            <genero> M </genero>
+        </personaje>
+        <personaje id="3" tipo="secundario"> 
+            <nombre> Abuela </nombre>
+            <genero> F </genero>
+        </personaje>
+    </personajes>
+    <trama> El lobo se quiere comer a caperucita </trama>
+    <etiqueta nombre="123456"/>
+    <precio moneda="$"> 12.99 </precio>
+</cuento>

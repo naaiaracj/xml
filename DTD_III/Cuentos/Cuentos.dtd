@@ -1,0 +1,25 @@
+<!DOCTYPE cuento [
+<!-- Declaramos elemento raíz cuento donde debe de haber mínimo 1 personaje y donde la etiqueta puede haber ninguna o varias y precio será opcional -->
+<!ELEMENT cuento (personajes+, trama, etiqueta*, precio?)>
+<!-- Aunque nos pida que contenga una letra y dos números no hay una opción que restringa eso por lo que se pone CDATA-->
+    <!ATTLIST cuento cod CDATA #REQUIRED>
+    <!ATTLIST cuento titulo CDATA #REQUIRED>
+    <!ATTLIST cuento genero (infantil | fantasia | terror) #IMPLIED>
+<!ELEMENT personajes (personaje+)>
+<!-- Las descripciones fisicas, imagen y url son opcionales por ello van en parentesis y junto al caracter ? -->
+<!ELEMENT personaje (nombre, genero, descripcion?, (descripcion_fisica | imagen | url)?)>   
+    <!ATTLIST personaje id ID #REQUIRED>
+    <!ATTLIST personaje tipo (principal | secundario | antagonista) "principal">
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (M | F | N) #REQUIRED>
+<!ELEMENT descripcion_fisica (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT trama (#PCDATA)>
+<!-- La etiquetaes un elemento vacío qie contiene como atributo nombre -->
+<!ELEMENT etiqueta EMPTY>
+    <!ATTLIST etiqueta nombre CDATA #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!-- El atributo de precio: moneda tiene como defecto eur -->
+    <!ATTLIST precio moneda CDATA "eur">
+]>
