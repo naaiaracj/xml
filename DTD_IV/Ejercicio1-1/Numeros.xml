@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD4 EJ1]
+-->
+<!DOCTYPE numeros [
+<!-- El error es que el elemento raíz numeros se compone por el elemento numero que no estaba declarado 
+     Así también deducimos que se guardarán de 1 a varios elementos numero -->
+    <!ELEMENT numeros (numero)+>
+    <!ELEMENT numero (#PCDATA)>
+]>
+
+<numeros>
+    <numero>25</numero>
+</numeros>
