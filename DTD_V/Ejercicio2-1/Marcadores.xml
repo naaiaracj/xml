@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD5 EJ1]
+-->
+<!-- El error es que favoritos no es el elemento raíz, es marcadores y la cardinalidad del elemento marcador debe ser o + o * ya que hay más de un elemento marcador en el documento xml -->
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores (marcador+)>
+    <!ELEMENT marcador (nombre, uri)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT uri (#PCDATA)>
+]>
+
+<marcadores>
+    <marcador>
+        <nombre>W3C</nombre>
+        <uri>http://www.W3.org/</uri>
+    </marcador>
+    <marcador>
+        <nombre>Web Hypertext Application Technology Working Group (WHATWG)</nombre>
+        <uri>http://www.whatwg.org/</uri>
+    </marcador>
+</marcadores>
