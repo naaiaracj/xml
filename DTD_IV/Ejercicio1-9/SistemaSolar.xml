@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD4 EJ9]
+-->
+<!DOCTYPE sistemaSolar [
+    <!ELEMENT sistemaSolar (cuerpo*)>
+    <!ELEMENT cuerpo (planeta | satelite | asteroide)>
+    <!ELEMENT planeta (#PCDATA)>
+    <!ELEMENT satelite (#PCDATA)>
+    <!ELEMENT asteroide (#PCDATA)>
+]>
+
+<sistemaSolar>
+    <cuerpo>
+        <planeta>Tierra</planeta>
+    </cuerpo>
+<!-- El error es que un cuerpo debe ser o planeta o satelite o asteroide la Luna debe ser otro cuerpo -->
+    <cuerpo>
+        <satelite>Luna</satelite>
+    </cuerpo>
+<!-- El error es que el asteroide Ceres no estaba dentro de cuerpo sino se sistema solar
+     y no puede ser porque es un elemento de cuerpo -->
+    <cuerpo>
+        <asteroide>Ceres</asteroide>
+    </cuerpo>
+</sistemaSolar>
