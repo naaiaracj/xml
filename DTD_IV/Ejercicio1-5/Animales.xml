@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD4 EJ5]
+-->
+<!DOCTYPE animales [
+    <!ELEMENT animales (animal*)>
+    <!ELEMENT animal (#PCDATA)>
+    <!ATTLIST animal raza (perro | gato) #IMPLIED>
+]>
+
+<animales>
+<!-- El error es que perro y gato deberian ser atributos de animal o ser directamente el elemento animal -->
+    <animal raza="perro">Caniche</animal>
+    <animal raza="gato">Siamés</animal>
+</animales>
