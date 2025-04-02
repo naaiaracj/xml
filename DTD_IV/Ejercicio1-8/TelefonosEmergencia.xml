@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD4 EJ8]
+-->
+<!DOCTYPE agenda [
+    <!ELEMENT agenda (contacto*)>
+    <!ELEMENT contacto (nombre, telefonoFijo*, telefonoMovil+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT telefonoFijo (#PCDATA)>
+    <!ELEMENT telefonoMovil (#PCDATA)>
+]>
+
+<agenda>
+    <contacto>
+        <nombre>Ayuntamiento</nombre>
+        <telefonoFijo>010</telefonoFijo>
+<!-- El error es que la cardinalidad del elemento telefonoMovil es 1 o varios por lo que debe aparecer uno mínimo -->
+        <telefonoMovil>156348952</telefonoMovil>
+    </contacto>
+    <contacto>
+        <nombre>Emergencias</nombre>
+<!-- El error es que los elementos deben seguir el orden establecidos porla DTD por lo que debe estar el fijo antes que el movil -->
+        <telefonoFijo>112 (Unión Europea)</telefonoFijo>
+        <telefonoFijo>911 (Estados unidos)</telefonoFijo>
+        <telefonoMovil>Desconocido</telefonoMovil>
+    </contacto>
+</agenda>
