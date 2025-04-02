@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD4 EJ3]
+-->
+<!DOCTYPE colores [
+    <!ELEMENT colores (color*)>
+    <!ELEMENT color (#PCDATA)>
+]>
+
+<colores>
+    <color>azul marino</color>
+<!-- El error era que no se habia etiquetado el color -->
+    <color>negro</color>
+    <color>amarillo</color>
+</colores>
