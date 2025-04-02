@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD4 EJ7]
+-->
+<!DOCTYPE musicos [
+    <!ELEMENT musicos (musico*)>
+    <!ELEMENT musico ((nombre | apodo), fechaNacimiento)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apodo (#PCDATA)>
+    <!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+
+<musicos>
+    <musico>
+        <nombre>Antonio Vivaldi</nombre>
+<!-- El error es que solo puede tener o el elemento nombre o el elemento apodo
+     por lo que, se puede poner en la DTD que puedan ser ambos añadiendo al lado del parentesís con las barras verticales el caracter + o se puede eliminar del xml un elemento de los dos -->
+        <fechaNacimiento>4 de marzo de 1678</fechaNacimiento>
+    </musico>
+    <musico>
+        <apodo>El viejo  peluca</apodo>
+<!-- El error es que solo puede tener o el elemento nombre o el elemento apodo
+     por lo que, se puede poner en la DTD que puedan ser ambos añadiendo al lado del parentesís con las barras verticales el caracter + o se puede eliminar del xml un elemento de los dos -->
+        <fechaNacimiento>21 de marzo de 1685</fechaNacimiento>
+    </musico>
+</musicos>
