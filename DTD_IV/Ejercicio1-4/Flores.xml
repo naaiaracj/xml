@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [02/04/2025]
+Ejercicio: [DTD4 EJ4]
+-->
+<!DOCTYPE flores [
+    <!ELEMENT flores (flor+)>
+    <!ELEMENT flor (#PCDATA)>
+]>
+
+<flores>
+<!-- El error es que el elemento flor tiene la cardinalidad de 1 o varios por lo que es obligatorio que haya por lo menos un elemento flor-->
+    <flor>Tulipán</flor>
+</flores>
