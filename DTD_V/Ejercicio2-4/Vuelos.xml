@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD5 EJ4]
+-->
 <!DOCTYPE vuelos [ 
 <!ELEMENT vuelos (vuelo*)>
 <!-- El error es que el orden en el documento xml varía por lo que se pone origen y destino como elementos opcionales
