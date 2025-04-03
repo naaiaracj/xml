@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD5 EJ9]
+-->
+<!DOCTYPE persona [
+<!ELEMENT persona EMPTY>
+<!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+<!-- El error es que el atributo establecido es nombre no dni -->
+<persona nombre="03141592E" />
+
