@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD7 EJ1]
+-->
+<!DOCTYPE libro [
+    <!ELEMENT libro EMPTY>
+<!-- El error es que el tipo NMTOKEN no permite los espacios en blanco -->
+    <!ATTLIST libro autor CDATA #REQUIRED>
+]>
+
+<libro autor="Mario Vargas Llosa" />
