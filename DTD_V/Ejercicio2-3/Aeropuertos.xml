@@ -8,7 +8,7 @@ Ejercicio: [DTD5 EJ3]
 <!DOCTYPE aeropuertos [
 <!ELEMENT aeropuertos (aeropuerto*)>
 <!-- El elemento cerrado es opcional por lo que puede estar o no por ello se debe agregar su cardinalidad -->
-<ELEMENT aeropuerto (nombre, cerrado?)> 
+<!ELEMENT aeropuerto (nombre, cerrado?)> 
 <!ELEMENT nombre (#PCDATA)> 
 <!ELEMENT cerrado (#PCDATA)>
 ]>

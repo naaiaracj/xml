@@ -9,8 +9,8 @@ Ejercicio: [DTD5 EJ7]
 <!ELEMENT colores (color*)>
 <!-- El error es que color no estaba declarado ni sus elementos -->
 <!ELEMENT color (nombreSvg, codigo)>
-<!ELEMENT nombreSvg (#PCDATA)
-<!-- El error es que el elemento no estaba declarado y egb y cmyk no estaban dentro del elemento codigo -->>
+<!ELEMENT nombreSvg (#PCDATA)>
+<!-- El error es que el elemento no estaba declarado y egb y cmyk no estaban dentro del elemento codigo -->
 <!ELEMENT codigo (rgb, cmyk)>
 <!ELEMENT rgb (#PCDATA) >
 <!ELEMENT cmyk (#PCDATA)>
