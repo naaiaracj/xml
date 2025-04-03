@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD6 EJ2]
+-->
+<!DOCTYPE pelicula [
+<!ELEMENT pelicula EMPTY>
+<!ATTLIST pelicula titulo CDATA #IMPLIED>
+]>
+<!-- El error es que genero no está declarado como atributo de pelicula -->
+<pelicula titulo="La diligencia" />
