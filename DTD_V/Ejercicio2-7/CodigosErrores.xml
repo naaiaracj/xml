@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD5 EJ7]
+-->
+<!DOCTYPE colores [
+<!ELEMENT colores (color*)>
+<!-- El error es que color no estaba declarado ni sus elementos -->
+<!ELEMENT color (nombreSvg, codigo)>
+<!ELEMENT nombreSvg (#PCDATA)
+<!-- El error es que el elemento no estaba declarado y egb y cmyk no estaban dentro del elemento codigo -->>
+<!ELEMENT codigo (rgb, cmyk)>
+<!ELEMENT rgb (#PCDATA) >
+<!ELEMENT cmyk (#PCDATA)>
+]>
+
+<colores>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <rgb>#800080</rgb>
+        </codigo>
+    </color>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <cmyk>#00FF007F</cmyk>
+        </codigo>
+    </color>
+</colores>
