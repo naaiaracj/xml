@@ -3,7 +3,7 @@
 Nombre: [Naiara Cuenca Juanas]
 Curso: [ASIR1]
 Fecha: [03/04/2025]
-Ejercicio: [DTD6 EJ3]
+Ejercicio: [DTD6 EJ5]
 -->
 <!DOCTYPE futbol [
     <!ELEMENT futbol (jugador*)>

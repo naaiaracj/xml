@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD6 EJ6]
+-->
+<!DOCTYPE futbol [
+    <!ELEMENT futbol ((jugador|equipo)*)>
+    <!ELEMENT jugador EMPTY>
+    <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+    <!ATTLIST jugador codigo ID #REQUIRED>
+    <!ELEMENT equipo EMPTY>
+    <!ATTLIST equipo nombre CDATA #REQUIRED>
+    <!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+    <jugador nombre="Edison Arantes do Nascimento" codigo="ean" />
+    <jugador nombre="Diego Armando Maradona" codigo="dam" />
+    <jugador nombre="Johan Cruyff" codigo="jc" />
+<!-- El error es que el atributo de equipo jugadores es de tipo IDREFS lo que implica que su valor debe de ser un código existente -->
+    <equipo nombre="Società Sportiva Calcio Napoli" jugadores="dam" />
+    <equipo nombre="Futbol Club Barcelona" jugadores="jc dam" />
+</futbol>
