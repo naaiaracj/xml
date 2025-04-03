@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD7 EJ2]
+-->
+<!DOCTYPE inventores [
+<!-- El error es que no se ha declarado inventor elemento del elemento raíz ni su cardinilidad -->    
+    <!ELEMENT inventores (inventor+)>
+    <!ELEMENT inventor EMPTY>
+<!-- El error si nos basamos en el documento xml el nombre no debe ser obligatorioy aparte el tipo ID no permite espacios -->
+    <!ATTLIST inventor nombre ID #IMPLIED>
+    <!ATTLIST inventor invento CDATA #REQUIRED>
+
+]>
+<inventores>
+    <inventor nombre="Robert Adler" invento="Mando a distancia" />
+    <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+    <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+    <inventor invento="Fuego" />
+</inventores>
