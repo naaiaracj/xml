@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD7 EJ3]
+-->
+<!DOCTYPE cosasPorHacer [
+<!-- El error es la cardinalidad del elemento cosa -->
+    <!ELEMENT cosasPorHacer (cosa+)>
+<!-- El error es que cosa no es un elemento vacío ya que contiene cosas -->
+    <!ELEMENT cosa (#PCDATA)>
+    <!ATTLIST cosa fecha CDATA #REQUIRED>
+<!-- El error es que el atributo asunto no es obligatorio sino opcional -->
+    <!ATTLIST cosa asunto CDATA #IMPLIED>
+    <!ATTLIST cosa fechaLimite CDATA #REQUIRED>
+]>
+
+<cosasPorHacer >
+    <cosa fecha="20 de febrero de 2011" fechaLimite="1 de marzo de 2011">
+    Preparar ejercicios de DTDs</cosa>
+    <cosa fecha="21 de febrero de 2011" fechaLimite="5 de marzo de 2011">
+    Preparar tema XSLT</cosa>
+</cosasPorHacer>
