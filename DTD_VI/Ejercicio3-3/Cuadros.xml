@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD6 EJ3]
+-->
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+
+<cuadros>
+    <cuadro titulo="Adán y Eva" autor="Alberto Durero" />
+<!-- El error es que el orden establecido es el atributo titulo y luego el de autor -->
+    <cuadro titulo="Adán y Eva" autor="Lucas Cranach, el viejo" />
+</cuadros>
