@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos [
+<!ELEMENT aeropuertos (aeropuerto*)>
+<!-- El elemento cerrado es opcional por lo que puede estar o no por ello se debe agregar su cardinalidad -->
+<ELEMENT aeropuerto (nombre, cerrado?)> 
+<!ELEMENT nombre (#PCDATA)> 
+<!ELEMENT cerrado (#PCDATA)>
+]>
+
+<aeropuertos>
+    <aeropuerto>
+        <nombre>Berlín Schönefeld (SFX)</nombre>
+    </aeropuerto>
+    <aeropuerto >
+        <nombre>Berlín Tempelhof (THF)</nombre>
+        <cerrado />
+</aeropuerto>
+</aeropuertos> 
