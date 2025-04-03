@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [03/04/2025]
+Ejercicio: [DTD6 EJ3]
+-->
+<!DOCTYPE listaCompra [
+<!ELEMENT listaCompra (item*)>
+<!ELEMENT item EMPTY>
+<!ATTLIST item nombre CDATA #REQUIRED>
+<!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+
+<listaCompra>
+<!-- El error es que el nombre lo está poniendo como un elemento y en la DTD está definido  -->
+    <item nombre="leche" cantidad="12 litros" ></item>
+    <item nombre="pan" cantidad="3 barras de cuarto" />
+</listaCompra>
