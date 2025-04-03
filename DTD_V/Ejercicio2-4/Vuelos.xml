@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vuelos [ 
+<!ELEMENT vuelos (vuelo*)>
+<!-- El error es que el orden en el documento xml varía por lo que se pone origen y destino como elementos opcionales
+     ya que el orden no influye y la cardinalidad es de 0 a varios para que puedan estar ambos -->
+<!ELEMENT vuelo (origen | destino)*> 
+<!ELEMENT origen (#PCDATA)> 
+<!ELEMENT destino (#PCDATA)>
+]>
+
+<vuelos>
+    <vuelo>
+        <origen>Valencia (VLC)</origen>
+        <destino>Londres Heathrow (LHR)</destino>
+    </vuelo>
+    <vuelo>
+        <destino>Berlin Schönefeld (SFX)</destino> 
+        <origen>París Charles de Gaulle (CDG)</origen>
+</vuelo>
+</vuelos>
