@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [12/04/2025]
+Ejercicio: [XML CON XSDII EJ2]
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- El elemento tipodigitos tiene un rango de números entre 0 y 19 -->
+  <xs:simpleType name="tipoDosDigitos">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="19"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="fichas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ficha" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo" type="tipoDosDigitos"/>
+              <xs:element name="nombre" type="xs:string"/>
+            </xs:sequence>
+<!-- Número es un atributo obligatorio -->
+            <xs:attribute name="numero" type="tipoDosDigitos" use="required"/>
+            <xs:attribute name="letra">
+              <xs:simpleType>
+<!-- El atributo letra solo puede X, Y o Z -->
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="X"/>
+                  <xs:enumeration value="Y"/>
+                  <xs:enumeration value="Z"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
