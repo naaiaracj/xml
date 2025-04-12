@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [12/04/2025]
+Ejercicio: [XML CON XSD EJ3]
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Tenemos como elemento raíz precios que se comprone de precio donde puede aparecer ilimitadas veces -->
+<xs:element name="precios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="precio" maxOccurs="unbounded">
+          <xs:simpleType>
+<!-- Se declara de tipo simple porque no contiene una secuencia y de base decimal ya que lo dice el enunciado -->
+            <xs:restriction base="xs:decimal">
+<!-- TotalDgits especifica el número máximo de dígitos que puede tener un número en ete caso 3 -->
+              <xs:totalDigits value="3"/>
+<!-- FractionDigits especifica el número máximo de decimales que puede tener -->
+              <xs:fractionDigits value="2"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

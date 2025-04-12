@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [12/04/2025]
+Ejercicio: [XML CON XSD EJ3]
+-->
+
+<precios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="precios.xsd">
+ <precio>8</precio>
+ <precio>2.6</precio>
+ <precio>4.95</precio>
+ <precio>187</precio>
+</precios>

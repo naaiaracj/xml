@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [12/04/2025]
+Ejercicio: [XML CON XSD EJ2]
+-->
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <!-- Creamos un elemento raíz llamado fichas que será de tipo complejo ya que contiene varias fichas -->
 <xs:element name="fichas">
