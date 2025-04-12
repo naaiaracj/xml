@@ -7,7 +7,7 @@ Fecha: [12/04/2025]
 Ejercicio: [XML CON XSD EJ5]
 -->
 
-<?xml version="1.0" encoding="UTF-8"?>
+
 <fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="fichas.xsd">
   <ficha>
