@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Creamos un elemento raíz llamado fichas que será de tipo complejo ya que contiene varias fichas -->
+<xs:element name="fichas">
+ <xs:complexType>
+    <xs:sequence>
+<!-- El elemento ficha no tiene un maximo establecido por lo que puede haber ilimitado -->
+        <xs:element name="ficha" maxOccurs="unbounded">
+            <xs:complexType>
+                <xs:sequence>
+<!-- El elemento ficha se compone de dos elementos: nombre(string) y edad(número), cuya edad esta restringida a un rango de números -->
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="edad" type="xs:integer"/>
+                        <xs:restriction base="xs:integer">
+                            <xs:minExclusive value="0"/>
+                            <xs:maxExclusive value="131"/>
+                        </xs:restriction>
+                </xs:sequence>
+<!-- En el xml se ve que tiene un atributo que es un número obligatorio -->
+                <xs:attribute name="numero" type="xs:integer" use="required"/>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+ </xs:complexType>
+</xs:element>
+</xs:schema>
