@@ -1,0 +1,22 @@
+
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [12/04/2025]
+Ejercicio: [XML CON XSDII EJ3]
+
+1.Capítulo \d
+  Capítulo [0-9]
+2.Capítulo \d\d?
+  Capítulo [0-9]{1,2}
+3.Capítulo [1-9]\d?
+  Capítulo [1-9]{1}[0-9]{0,1}
+4.Capítulo \d+
+  Capítulo [0-9]{1,}
+5.\D Z
+  \D{1}Z
+6.AB{2,5}C
+  AB{2,}C
+7.RS{2,}[3-8]?
+  R S S+ [3-8]?
+8.COD\d{3}.+
+  COD[0-9]{3}.+
