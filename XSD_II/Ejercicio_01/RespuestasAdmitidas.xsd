@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [12/04/2025]
+Ejercicio: [XML CON XSDII EJ1]
+
+Respuestas expresando con patrón:
+<xs:pattern value="A|B|C|D|E"/>
+<xs:pattern value="[A-E]"/>
+<xs:pattern value="(A|B|C|D|E)"/>
+
+
+Respuesta sin expresarlo como patrón:
+<xs:element name="respuesta">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A"/>
+      <xs:enumeration value="B"/>
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="D"/>
+      <xs:enumeration value="E"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+-->
