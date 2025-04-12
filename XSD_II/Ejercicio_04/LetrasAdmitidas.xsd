@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [12/04/2025]
+Ejercicio: [XML CON XSDII EJ4]
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="letras">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+<!-- El patrón permite que uno o más pares de letras mayúsculas seguida de letras minúsculas -->
+        <xs:pattern value="([A-Z][a-z])+" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>
