@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [19/04/2025]
+Ejercicio: [XML CON XSDIII EJ2]
+-->
+
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="fichas.xsd">
+ <ficha>
+ <nombre>Ana Sanz Tin</nombre>
+ <clave>G8w2</clave>
+ </ficha>
+ <ficha>
+ <nombre>Iker Rubio Mol</nombre>
+ <clave>ag32Ue7AFF</clave>
+ </ficha>
