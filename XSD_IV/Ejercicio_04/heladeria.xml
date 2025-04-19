@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [19/04/2025]
+Ejercicio: [XML CON XSDIV EJ4]
+-->
+
+<heladeria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="heladeria.xsd">
+ <helado>
+ <fresa />
+ <chocolate />
+ </helado>
+ <helado>
+ <vainilla />
+ <chocolate />
+ </helado>
+</heladeria>
