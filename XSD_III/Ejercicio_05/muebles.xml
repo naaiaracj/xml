@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [19/04/2025]
+Ejercicio: [XML CON XSDIII EJ5]
+-->
+
+<muebles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="muebles.xsd">
+ <mueble color="blanco">mesa</mueble>
+ <mueble color="gris">silla</mueble>
+</muebles>
