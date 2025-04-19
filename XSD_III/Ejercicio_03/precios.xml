@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [19/04/2025]
+Ejercicio: [XML CON XSDIII EJ3]
+-->
+
+<!-- El elemento raiz es precios no articulos -->
+<precios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="articulos.xsd">
+<!-- Cada elemento precio tiene que tener un numero decimal y moneda es un atributo -->
+  <precio moneda="Euro">50</precio>
+  <precio moneda="Dólar">78.99</precio>
+</precios>
