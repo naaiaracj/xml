@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [19/04/2025]
+Ejercicio: [XML CON XSDIII EJ4]
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ubicaciones">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Cada ubicacion usa el nuevo tipo complejo -->
+        <xs:element name="ubicacion" type="infoUbicacion" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<!-- Declaramos direccion como las direcciones válidas -->
+  <xs:simpleType name="direccion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="norte"/>
+      <xs:enumeration value="sur"/>
+      <xs:enumeration value="este"/>
+      <xs:enumeration value="oeste"/>
+    </xs:restriction>
+  </xs:simpleType>
+<!-- infoubicacion extiende el tipo ubicacion y tiene un atributo de metros que es un numero positivo y obligatorio -->
+  <xs:complexType name="infoUbicacion">
+    <xs:simpleContent>
+      <xs:extension base="direccion">
+        <xs:attribute name="metros" type="xs:positiveInteger" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

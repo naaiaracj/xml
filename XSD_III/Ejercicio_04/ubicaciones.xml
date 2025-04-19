@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Nombre: [Naiara Cuenca Juanas]
+Curso: [ASIR1]
+Fecha: [19/04/2025]
+Ejercicio: [XML CON XSDIII EJ4]
+-->
+
+<ubicaciones xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance"
+xsi:noNamespaceSchemaLocation="ubicaciones.xsd">
+ <ubicacion metros="32">norte</ubicacion>
+ <ubicacion metros="25">este</ubicacion>
+ <ubicacion metros="64">este</ubicacion>
+</ubicaciones>
